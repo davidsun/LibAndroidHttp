@@ -1,0 +1,6 @@
+#include "setup.h"
+#include "hugehelp.h"
+void hugehelp(void)
+{
+  puts ( "This is a silly replacement for the actual file.");
+}

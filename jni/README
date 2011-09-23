@@ -1,0 +1,4 @@
+After unzipping/untarring curl library copy curlbuild.h to curl/include/curl
+and copy curl_config.h to curl/lib/curl_config.h.
+
+

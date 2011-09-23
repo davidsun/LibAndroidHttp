@@ -1,0 +1,17 @@
+LibAndroidHttp is a cURL library wrapper for Android platform.
+
+
+Introduction:
+    I wrote the code because I want to speed up the syncing process of EasyRSS (http://easyrssofficial.herokuapp.com/), but the code is not used, since it has a critical bug (see the *Bugs* section for more details).
+
+    The implementation of the interaction between cURL and JAVA is written in C with JNI. Totally, there are four classes,
+        HttpURLByteConverter
+        HttpURLFileWriter
+        HttpURLInputStream
+
+    Just read the source code for more details (for the JAVA code of this project is quite short).
+
+
+Bugs:
+    I've tested the code in VM of Android with version 1.6, 2.0, 2.1, 2.2 and 2.3. On mobiles, I've tested the code with Android v2.1. The code works well on all of the mentioned devices.
+    But unfortunately, it is reported that the library will crash on Android v2.3. I really don't know why it happens, but it's the fact (I guess it's the bug of JNI). Sorry for the bug. Also, I'm looking forward that someone would help me with the bug.
